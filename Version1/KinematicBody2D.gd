@@ -1,7 +1,8 @@
 extends KinematicBody2D
 
-const GRID=16
-onready var ray=get_node("Ray")
+const GRID:=16
+onready var ray:RayCast2D=get_node("Ray")
+onready var tween=$Tween
 
 func _unhandled_input(event):
 	var direction = Vector2.ZERO
@@ -21,10 +22,20 @@ func move(direction):
 		ray.cast_to=direction*GRID
 		ray.force_raycast_update()
 	if !ray.is_colliding():
-		position=position+(direction*GRID)
+		moveplayer(direction*GRID)
+		#position=position+(direction*GRID)
 	else:
 		var collider
 		collider=ray.get_collider()
 		if collider.is_in_group('Box'):
 			if collider.move(direction):
-				position=position+(direction*GRID)
+				moveplayer(direction*GRID)
+
+func moveplayer(amount):
+	if not tween.is_active():
+		tween.interpolate_property(self,"position",
+			position,
+			position+(amount),
+			0.1,Tween.TRANS_SINE,Tween.EASE_IN_OUT
+	)
+	tween.start()

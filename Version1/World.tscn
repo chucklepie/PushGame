@@ -7,78 +7,81 @@
 [ext_resource path="res://World.gd" type="Script" id=5]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 7.56503, 11.3476 )
 script = ExtResource( 5 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 72.435, 36.6524 )
 
 [node name="Walls" type="Node2D" parent="."]
 
 [node name="Wall" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 80, 16 )
+position = Vector2( 72.435, 20.6524 )
 
 [node name="Wall2" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 64, 16 )
+position = Vector2( 56.435, 20.6524 )
 
 [node name="Wall3" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 32 )
+position = Vector2( 24.435, 36.6524 )
 
 [node name="Wall4" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 48, 16 )
+position = Vector2( 40.435, 20.6524 )
 
 [node name="Wall5" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 48 )
+position = Vector2( 24.435, 52.6524 )
 
 [node name="Wall7" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 64 )
+position = Vector2( 24.435, 68.6524 )
 
 [node name="Wall8" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 80 )
+position = Vector2( 24.435, 84.6524 )
 
 [node name="Wall10" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 96 )
+position = Vector2( 24.435, 100.652 )
 
 [node name="Wall11" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 48, 96 )
+position = Vector2( 40.435, 100.652 )
 
 [node name="Wall12" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 80, 96 )
+position = Vector2( 72.435, 100.652 )
 
 [node name="Wall13" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 96, 96 )
+position = Vector2( 88.435, 100.652 )
 
 [node name="Wall14" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 112, 96 )
+position = Vector2( 104.435, 100.652 )
 
 [node name="Wall15" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 112, 80 )
+position = Vector2( 104.435, 84.6524 )
 
 [node name="Wall16" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 112, 64 )
+position = Vector2( 104.435, 68.6524 )
 
 [node name="Wall17" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 96, 16 )
+position = Vector2( 88.435, 20.6524 )
 
 [node name="Wall9" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 64, 96 )
+position = Vector2( 56.435, 100.652 )
 
 [node name="Wall6" parent="Walls" instance=ExtResource( 2 )]
-position = Vector2( 32, 16 )
+position = Vector2( 24.435, 20.6524 )
 
 [node name="Boxes" type="Node2D" parent="."]
 position = Vector2( 144, 64 )
 
 [node name="Box" parent="Boxes" instance=ExtResource( 3 )]
-position = Vector2( 0, -32 )
+position = Vector2( -7.56503, -27.3476 )
 
 [node name="Box2" parent="Boxes" instance=ExtResource( 3 )]
+position = Vector2( -7.56503, -11.3476 )
 
 [node name="Goals" type="Node2D" parent="."]
 
 [node name="Goal" parent="Goals" instance=ExtResource( 4 )]
-position = Vector2( 192, 64 )
+position = Vector2( 152.435, 52.6524 )
 
 [node name="Goal2" parent="Goals" instance=ExtResource( 4 )]
-position = Vector2( 192, 32 )
+position = Vector2( 152.435, 36.6524 )
 
 [node name="ConfirmationDialog" type="AcceptDialog" parent="."]
 margin_left = 32.0
